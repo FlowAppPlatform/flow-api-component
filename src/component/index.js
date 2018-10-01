@@ -6,12 +6,13 @@ const Flow = require('flow-platform-sdk');
  * 
  * The class takes properties common to all components,
  * - 'URL'
+ * - 'Data' ('Params')
  * The class emits ports common to all components,
  * - 'Failed' or 
  * - 'Complete' with the 'Response'
  * 
  */
-class Component extends Flow.Component {
+class APIComponent extends Flow.Component {
   constructor(name) {
     
     super();
@@ -20,7 +21,10 @@ class Component extends Flow.Component {
     const url = new Flow.Property('URL', 'url');
     url.required = true;
 
+    const data = new Flow.Property('Data', 'text');
+    
     this.addProperty(url);
+    this.addProperty(data);
 
     const failed = new Flow.Port('Failed');
     const complete = new Flow.Port('Complete');
@@ -41,4 +45,4 @@ class Component extends Flow.Component {
   }
 }
 
-module.exports = Component;
+module.exports = APIComponent;
