@@ -1,4 +1,4 @@
-const axios = require('axios');
+const Axios = require('./axios');
 const APIComponent = require('./component');
 
 module.exports = class GetComponent extends APIComponent {
@@ -10,9 +10,8 @@ module.exports = class GetComponent extends APIComponent {
     this.attachTask(function () {
       try {
 
-        axios.get(this.getProperty('URL').data, {
-          params: JSON.parse(this.getProperty('Data').data)
-        })
+        new Axios(this.getProperty('URL').data, JSON.parse(this.getProperty('Data').data))
+          .request()
           .then((response) => {
             this.emitResult(this.getPort('Complete'), response.data);
           })
