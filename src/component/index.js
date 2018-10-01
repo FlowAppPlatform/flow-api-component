@@ -38,8 +38,11 @@ class APIComponent extends Flow.Component {
   }
 
   emitResult(port, response=null) {
-    if (port.hasProperty('Response'))
-      port.getProperty('Response').data = response;
+    if (port.hasProperty('Response')) {
+      try { // store json stringifiable data
+        port.getProperty('Response').data = JSON.stringify(response);
+      } catch(e) {/* ignore error */}
+    }
     port.emit();
     this.taskComplete();
   }

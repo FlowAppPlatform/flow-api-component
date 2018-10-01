@@ -10,11 +10,11 @@ module.exports = class GetComponent extends APIComponent {
     this.attachTask(function () {
       try {
 
-        axios.get(JSON.parse(this.getProperty('URL')), {
-          params: JSON.parse(this.getProperty('Data'))
+        axios.get(this.getProperty('URL').data, {
+          params: JSON.parse(this.getProperty('Data').data)
         })
           .then((response) => {
-            this.emitResult(this.getPort('Complete'), response);
+            this.emitResult(this.getPort('Complete'), response.data);
           })
           .catch(err => {
             this.emitResult(this.getPort('Failed'));
