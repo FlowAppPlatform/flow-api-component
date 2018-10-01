@@ -1,0 +1,39 @@
+{
+  "flow-api-component": {
+    "componentId": "flow-api-component",
+    "title": "API Component",
+    "imgSrc": "src/assets/images/icons/api.svg",
+    "type": "apiComponent",
+    "metadata": {
+      "icon-color": "#7ab260"
+    },
+    "ports": [
+      {
+        "id": "complete",
+        "title": "Complete",
+        "description": "Denotes the state when an api request is complete"
+      },
+      {
+        "id": "failed",
+        "title": "Failed",
+        "description": "Denotes the state when an api request fails"
+      }
+    ],
+    "properties": [
+      {
+        "id": "url",
+        "name": "URL",
+        "type": "url",
+        "data": null
+      },
+      {
+        "id": "data",
+        "name": "Data",
+        "type": "text",
+        "data": {}
+      }
+    ],
+    "showOnComponentsPanel": false,
+    "isDeletable": false
+  }
+}
