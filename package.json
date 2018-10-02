@@ -1,0 +1,29 @@
+{
+  "name": "flow-api-component",
+  "version": "1.0.0",
+  "description": "API component for Flow SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ./src --fix && ./node_modules/mocha/bin/mocha tests.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "eslint": "^5.4.0",
+    "flow-platform-sdk": "^2.0.94",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlowAppPlatform/flow-api-component.git"
+  },
+  "keywords": [
+    "flow",
+    "api"
+  ],
+  "author": "Hackerbay Inc. <hello@hackerbay.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/FlowAppPlatform/flow-api-component/issues"
+  },
+  "homepage": "https://github.com/FlowAppPlatform/flow-api-component#readme"
+}

@@ -1,0 +1,214 @@
+{
+  "flow-api-component-get": {
+    "componentId": "flow-api-component-get",
+    "title": "GET Request",
+    "imgSrc": "assets/icons/api.svg",
+    "type": "flow-graph-component",
+    "file": "src/get.js",
+    "metadata": {
+      "icon-color": "#7ab260"
+    },
+    "ports": [
+      {
+        "id": "complete",
+        "title": "Complete",
+        "description": "Denotes the state when the request is successfully made"
+      },
+      {
+        "id": "failed",
+        "title": "Failed",
+        "description": "Denotes the state when an error occurs"
+      }
+    ],
+    "properties": [
+      {
+        "categoryName": "General",
+        "categoryDescription": "Basic settings about the GET component.",
+        "properties": [
+          {
+            "id": "URL",
+            "name": "URL",
+            "type": "text",
+            "data": null,
+            "options": { "required": true }
+          },
+          {
+            "id": "Headers",
+            "name": "Headers",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          },
+          {
+            "id": "Data",
+            "name": "Data",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          }
+        ]
+      }
+    ],
+    "showOnComponentsPanel": false,
+    "isDeletable": false
+  },
+  "flow-api-component-post": {
+    "componentId": "flow-api-component-post",
+    "title": "POST Request",
+    "imgSrc": "assets/icons/api.svg",
+    "type": "flow-graph-component",
+    "file": "src/post.js",
+    "metadata": {
+      "icon-color": "#7ab260"
+    },
+    "ports": [
+      {
+        "id": "complete",
+        "title": "Complete",
+        "description": "Denotes the state when the request is successfully made"
+      },
+      {
+        "id": "failed",
+        "title": "Failed",
+        "description": "Denotes the state when an error occurs"
+      }
+    ],
+    "properties": [
+      {
+        "categoryName": "General",
+        "categoryDescription": "Basic settings about the POST component.",
+        "properties": [
+          {
+            "id": "URL",
+            "name": "URL",
+            "type": "text",
+            "data": null,
+            "options": { "required": true }
+          },
+          {
+            "id": "Headers",
+            "name": "Headers",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          },
+          {
+            "id": "Data",
+            "name": "Data",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          }
+        ]
+      }
+    ],
+    "showOnComponentsPanel": false,
+    "isDeletable": false
+  },
+  "flow-api-component-put": {
+    "componentId": "flow-api-component-put",
+    "title": "PUT Request",
+    "imgSrc": "assets/icons/api.svg",
+    "type": "flow-graph-component",
+    "file": "src/put.js",
+    "metadata": {
+      "icon-color": "#7ab260"
+    },
+    "ports": [
+      {
+        "id": "complete",
+        "title": "Complete",
+        "description": "Denotes the state when the request is successfully made"
+      },
+      {
+        "id": "failed",
+        "title": "Failed",
+        "description": "Denotes the state when an error occurs"
+      }
+    ],
+    "properties": [
+      {
+        "categoryName": "General",
+        "categoryDescription": "Basic settings about the PUT component.",
+        "properties": [
+          {
+            "id": "URL",
+            "name": "URL",
+            "type": "text",
+            "data": null,
+            "options": { "required": true }
+          },
+          {
+            "id": "Headers",
+            "name": "Headers",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          },
+          {
+            "id": "Data",
+            "name": "Data",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          }
+        ]
+      }
+    ],
+    "showOnComponentsPanel": false,
+    "isDeletable": false
+  },
+  "flow-api-component-delete": {
+    "componentId": "flow-api-component-delete",
+    "title": "DELETE Request",
+    "imgSrc": "assets/icons/api.svg",
+    "type": "flow-graph-component",
+    "file": "src/delete.js",
+    "metadata": {
+      "icon-color": "#7ab260"
+    },
+    "ports": [
+      {
+        "id": "complete",
+        "title": "Complete",
+        "description": "Denotes the state when the request is successfully made"
+      },
+      {
+        "id": "failed",
+        "title": "Failed",
+        "description": "Denotes the state when an error occurs"
+      }
+    ],
+    "properties": [
+      {
+        "categoryName": "General",
+        "categoryDescription": "Basic settings about the DELETE component.",
+        "properties": [
+          {
+            "id": "URL",
+            "name": "URL",
+            "type": "text",
+            "data": null,
+            "options": { "required": true }
+          },
+          {
+            "id": "Headers",
+            "name": "Headers",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          },
+          {
+            "id": "Data",
+            "name": "Data",
+            "type": "text",
+            "data": null,
+            "options": { "required": false }
+          }
+        ]
+      }
+    ],
+    "showOnComponentsPanel": false,
+    "isDeletable": false
+  }
+}
