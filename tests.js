@@ -6,6 +6,7 @@ describe(`Component Tests
   it('Component should have all required properties', function (done) {
     try {
       component.getProperty('URL');
+      component.getProperty('Headers');
       component.getProperty('Data');
       done();
     } catch(e) { done(new Error('Component missing required properties')); }
