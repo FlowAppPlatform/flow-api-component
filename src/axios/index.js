@@ -15,7 +15,7 @@ module.exports = class Axios {
     const configuration = {
       method: method
     };
-    if (method != 'get') {
+    if (method !== 'get') {
       configuration.data = data;
     } else configuration.params = data;
     return this.instance.request(configuration);

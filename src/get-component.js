@@ -10,9 +10,12 @@ module.exports = class GetComponent extends APIComponent {
     this.attachTask(function () {
       try {
 
-        new Axios(this.getProperty('URL').data, this.getProperty('Headers').data)
-          .request(null, JSON.parse(this.getProperty('Data').data))
-          .then((response) => {
+        new Axios(
+          this.getProperty('URL').data,
+          JSON.parse(this.getProperty('Headers').data)
+        )
+          .request('get', JSON.parse(this.getProperty('Data').data))
+          .then(response => {
             this.emitResult('Complete', response.data);
           })
           .catch(err => {

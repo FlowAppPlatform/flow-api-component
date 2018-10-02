@@ -27,6 +27,12 @@
         "data": null
       },
       {
+        "id": "headers",
+        "name": "Headers",
+        "type": "text",
+        "data": {}
+      },
+      {
         "id": "data",
         "name": "Data",
         "type": "text",

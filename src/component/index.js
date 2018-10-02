@@ -5,8 +5,9 @@ const Flow = require('flow-platform-sdk');
  * This class is a general API Component class
  * 
  * The class takes properties common to all components,
- * - 'URL'
- * - 'Data' ('Params')
+ * - 'URL', a string
+ * - 'Headers', a json parceable string
+ * - 'Data' ('Params'), a json parceable string
  * The class emits ports common to all components,
  * - 'Failed' or 
  * - 'Complete' with the 'Response'
