@@ -21,9 +21,11 @@ class APIComponent extends Flow.Component {
     const url = new Flow.Property('URL', 'url');
     url.required = true;
 
+    const headers = new Flow.Property('Headers', 'text');
     const data = new Flow.Property('Data', 'text');
     
     this.addProperty(url);
+    this.addProperty(headers);
     this.addProperty(data);
 
     const failed = new Flow.Port('Failed');
@@ -37,7 +39,8 @@ class APIComponent extends Flow.Component {
 
   }
 
-  emitResult(port, response=null) {
+  emitResult(portName, response=null) {
+    const port = this.getPort(portName);
     if (port.hasProperty('Response')) {
       try { // store json stringifiable data
         port.getProperty('Response').data = JSON.stringify(response);
