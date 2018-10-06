@@ -13,21 +13,21 @@ npm install flow-api-component --save
 // require the component
 const Component = require('flow-api-component');
 
-// create instance of the GET component for example
-const component = new Component.GET();
+// create instance of the POST component for example
+const component = new Component.POST();
 ```
 
 *Provide url, headers and any data to pass*
 
 ```javascript
-component.getProperty('URL').data = 'https://www.google.com/';
+// absolute url to your endpoint e.g. https://localhost/clans
+component.getProperty('URL').data = 'Your Endpoint';
+component.getProperty('Data').data = {
+  'name': 'Marin Trump', role: 'Knight'
+};
 // this is optional
 component.getProperty('Headers').data = {
   'X-Requested-With': 'XMLHttpRequest'
-};
-// this is optional
-component.getProperty('Data').data = {
-  'q': 'home'
 };
 ```
 
@@ -52,6 +52,6 @@ component.execute();
 
 #### Conclusion
 
-And that's the Flow API GET component.
+And that's the Flow API POST component.
 
-Also check, the [POST](./docs/components/post.md), [PUT](./docs/components/put.md), [DELETE](./docs/components/delete.md)  components.
+Also check, the [GET](./get.md), [PUT](./put.md), [DELETE](./delete.md)  components.

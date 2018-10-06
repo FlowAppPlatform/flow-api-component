@@ -54,4 +54,4 @@ component.execute();
 
 And that's the Flow API GET component.
 
-Also check, the [POST](./docs/components/post.md), [PUT](./docs/components/put.md), [DELETE](./docs/components/delete.md)  components.
+Also check, the [POST](./post.md), [PUT](./put.md), [DELETE](./delete.md)  components.
