@@ -12,9 +12,9 @@ module.exports = class GetComponent extends APIComponent {
 
         new Axios(
           this.getProperty('URL').data,
-          JSON.parse(this.getProperty('Headers').data)
+          this.getProperty('Headers').data
         )
-          .request('get', JSON.parse(this.getProperty('Data').data))
+          .request('get', this.getProperty('Data').data)
           .then(response => {
             this.emitResult('Complete', response.data);
           })

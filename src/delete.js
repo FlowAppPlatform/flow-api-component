@@ -12,9 +12,9 @@ module.exports = class DeleteComponent extends APIComponent {
 
         new Axios(
           this.getProperty('URL').data,
-          JSON.parse(this.getProperty('Headers').data)
+          this.getProperty('Headers').data
         )
-          .request('delete', JSON.parse(this.getProperty('Data').data))
+          .request('delete', this.getProperty('Data').data)
           .then(response => {
             this.emitResult('Complete', response.data);
           })

@@ -12,9 +12,9 @@ module.exports = class PutComponent extends APIComponent {
 
         new Axios(
           this.getProperty('URL').data,
-          JSON.parse(this.getProperty('Headers').data)
+          this.getProperty('Headers').data
         )
-          .request('put', JSON.parse(this.getProperty('Data').data))
+          .request('put', this.getProperty('Data').data)
           .then(response => {
             this.emitResult('Complete', response.data);
           })
