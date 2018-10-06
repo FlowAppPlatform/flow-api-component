@@ -11,14 +11,44 @@
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
@@ -65,14 +95,44 @@
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
@@ -119,14 +179,44 @@
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
@@ -173,14 +263,44 @@
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
