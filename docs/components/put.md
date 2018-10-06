@@ -1,4 +1,4 @@
-# Flow API component
+# Flow API PUT component
 The npm package contains components for making API requests. The components are designed to work with Flow SDK
 
 *To use a component, install the package in your NodeJS project*
