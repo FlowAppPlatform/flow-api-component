@@ -13,8 +13,8 @@ describe(`Component Tests
   })
   it('Component should have all required ports', function (done) {
     try {
-      component.getPort('Complete').getProperty('Response');
-      component.getPort('Failed');
+      component.getPort('Complete').getProperty('Data');
+      component.getPort('Failed').getProperty('Data');
       done();
     } catch(e) { done(new Error('Component missing required ports')); }
   })
@@ -22,9 +22,9 @@ describe(`Component Tests
     this.timeout(7000);
     component.getProperty('URL').data = 'https://www.google.com/';
     component.getProperty('Headers').data =
-      JSON.stringify({'X-Requested-With': 'XMLHttpRequest'});
+      {'X-Requested-With': 'XMLHttpRequest'};
     component.getProperty('Data').data =
-      JSON.stringify({'q': 'home'});
+      {'q': 'home'};
 
     component.getPort('Complete').onEmit(function() {
       done();
