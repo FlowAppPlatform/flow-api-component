@@ -6,8 +6,8 @@ const Flow = require('flow-platform-sdk');
  * 
  * The class takes properties common to all components,
  * - 'URL', a string
- * - 'Headers', a json parceable string
- * - 'Data' ('Params'), a json parceable string
+ * - 'Headers'
+ * - 'Data' ('Params')
  * The class emits ports common to all components,
  * - 'Failed' or 
  * - 'Complete' with the 'Response'
@@ -22,8 +22,8 @@ class APIComponent extends Flow.Component {
     const url = new Flow.Property('URL', 'url');
     url.required = true;
 
-    const headers = new Flow.Property('Headers', 'text');
-    const data = new Flow.Property('Data', 'text');
+    const headers = new Flow.Property('Headers', 'object');
+    const data = new Flow.Property('Data', 'object');
     
     this.addProperty(url);
     this.addProperty(headers);
@@ -32,23 +32,15 @@ class APIComponent extends Flow.Component {
     const failed = new Flow.Port('Failed');
     const complete = new Flow.Port('Complete');
     
-    const response = new Flow.Property('Response', 'text');
+    const response = new Flow.Property('Data', 'object');
     complete.addProperty(response);
+    
+    const error = new Flow.Property('Data', 'object');
+    failed.addProperty(error);
 
     this.addPort(failed);
     this.addPort(complete);
 
-  }
-
-  emitResult(portName, response=null) {
-    const port = this.getPort(portName);
-    if (port.hasProperty('Response')) {
-      try { // store json stringifiable data
-        port.getProperty('Response').data = JSON.stringify(response);
-      } catch(e) {/* ignore error */}
-    }
-    port.emit();
-    this.taskComplete();
   }
 }
 

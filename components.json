@@ -5,19 +5,50 @@
     "imgSrc": "assets/icons/api.svg",
     "type": "flow-graph-component",
     "file": "src/get.js",
+    "executionPlatform": ["server", "client"],
     "metadata": {
       "icon-color": "#7ab260"
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
@@ -58,19 +89,50 @@
     "imgSrc": "assets/icons/api.svg",
     "type": "flow-graph-component",
     "file": "src/post.js",
+    "executionPlatform": ["server", "client"],
     "metadata": {
       "icon-color": "#7ab260"
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
@@ -111,19 +173,50 @@
     "imgSrc": "assets/icons/api.svg",
     "type": "flow-graph-component",
     "file": "src/put.js",
+    "executionPlatform": ["server", "client"],
     "metadata": {
       "icon-color": "#7ab260"
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
@@ -164,19 +257,50 @@
     "imgSrc": "assets/icons/api.svg",
     "type": "flow-graph-component",
     "file": "src/delete.js",
+    "executionPlatform": ["server", "client"],
     "metadata": {
       "icon-color": "#7ab260"
     },
     "ports": [
       {
-        "id": "complete",
+        "id": "Complete",
         "title": "Complete",
-        "description": "Denotes the state when the request is successfully made"
+        "description": "Denotes the state when the request is successfully made",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": "failed",
+        "id": "Failed",
         "title": "Failed",
-        "description": "Denotes the state when an error occurs"
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port.",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
       }
     ],
     "properties": [
