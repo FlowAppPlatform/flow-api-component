@@ -80,8 +80,8 @@
         ]
       }
     ],
-    "showOnComponentsPanel": false,
-    "isDeletable": false
+    "showOnComponentsPanel": true,
+    "isDeletable": true
   },
   "flow-api-component-post": {
     "componentId": "flow-api-component-post",
@@ -164,8 +164,8 @@
         ]
       }
     ],
-    "showOnComponentsPanel": false,
-    "isDeletable": false
+    "showOnComponentsPanel": true,
+    "isDeletable": true
   },
   "flow-api-component-put": {
     "componentId": "flow-api-component-put",
@@ -248,8 +248,8 @@
         ]
       }
     ],
-    "showOnComponentsPanel": false,
-    "isDeletable": false
+    "showOnComponentsPanel": true,
+    "isDeletable": true
   },
   "flow-api-component-delete": {
     "componentId": "flow-api-component-delete",
@@ -332,7 +332,7 @@
         ]
       }
     ],
-    "showOnComponentsPanel": false,
-    "isDeletable": false
+    "showOnComponentsPanel": true,
+    "isDeletable": true
   }
 }
