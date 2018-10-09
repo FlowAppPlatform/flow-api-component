@@ -2,7 +2,7 @@ var Component = require('./src/get');
 
 describe(`Component Tests
 `, function () {
-  const component = new Component('API Component');
+  const component = new Component();
   it('Component should have all required properties', function (done) {
     try {
       component.getProperty('URL');
@@ -13,7 +13,12 @@ describe(`Component Tests
   })
   it('Component should have all required ports', function (done) {
     try {
-      component.getPort('Complete').getProperty('Data');
+      const complete = component.getPort('Complete');
+      complete.getProperty('StatusCode');
+      complete.getProperty('StatusText');
+      complete.getProperty('Headers');
+      complete.getProperty('Data');
+      complete.getProperty('Response');
       component.getPort('Failed').getProperty('Data');
       done();
     } catch(e) { done(new Error('Component missing required ports')); }
@@ -21,8 +26,6 @@ describe(`Component Tests
   it('Request should complete successfully', function (done) {
     this.timeout(7000);
     component.getProperty('URL').data = 'https://www.google.com/';
-    component.getProperty('Headers').data =
-      {'X-Requested-With': 'XMLHttpRequest'};
     component.getProperty('Data').data =
       {'q': 'home'};
 
