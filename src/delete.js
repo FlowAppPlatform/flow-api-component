@@ -1,10 +1,33 @@
+const Flow = require('flow-platform-sdk');
 const Axios = require('./axios');
-const APIComponent = require('./component');
 
-module.exports = class DeleteComponent extends APIComponent {
+module.exports = class DeleteComponent extends Flow.Component {
   constructor() {
 
-    super('Delete Component');
+    super();
+    this.name = 'Delete Component';
+
+    const url = new Flow.Property('URL', 'url');
+    url.required = true;
+
+    const headers = new Flow.Property('Headers', 'object');
+    const data = new Flow.Property('Data', 'object');
+    
+    this.addProperty(url);
+    this.addProperty(headers);
+    this.addProperty(data);
+
+    const failed = new Flow.Port('Failed');
+    const complete = new Flow.Port('Complete');
+    
+    const response = new Flow.Property('Data', 'object');
+    complete.addProperty(response);
+    
+    const error = new Flow.Property('Data', 'object');
+    failed.addProperty(error);
+
+    this.addPort(failed);
+    this.addPort(complete);
 
     // we make request here
     this.attachTask(function () {
