@@ -20,7 +20,19 @@ module.exports = class DeleteComponent extends Flow.Component {
     const failed = new Flow.Port('Failed');
     const complete = new Flow.Port('Complete');
     
-    const response = new Flow.Property('Data', 'object');
+    const responseStatusCode = new Flow.Property('StatusCode', 'number');
+    complete.addProperty(responseStatusCode);
+
+    const responseStatusText = new Flow.Property('StatusText', 'text');
+    complete.addProperty(responseStatusText);
+
+    const responseHeaders = new Flow.Property('Headers', 'object');
+    complete.addProperty(responseHeaders);
+
+    const responseData = new Flow.Property('Data', 'object');
+    complete.addProperty(responseData);
+
+    const response = new Flow.Property('Response', 'object');
     complete.addProperty(response);
     
     const error = new Flow.Property('Data', 'object');
@@ -39,7 +51,11 @@ module.exports = class DeleteComponent extends Flow.Component {
         .request('delete', this.getProperty('Data').data)
         .then(response => {
           const port = this.getPort('Complete');
+          port.getProperty('StatusCode').data = response.status;
+          port.getProperty('StatusText').data = response.statusText;
+          port.getProperty('Headers').data = response.headers;
           port.getProperty('Data').data = response.data;
+          port.getProperty('Response').data = response;
           port.emit();
           this.taskComplete();
         })
