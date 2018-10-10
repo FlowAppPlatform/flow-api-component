@@ -35,8 +35,14 @@ component.getProperty('Headers').data = {
 ```javascript
 component.getPort('Complete').onEmit(function() {
   // request was successfully made
-  // the response can be accessed through the 'Data' property of the port
-  let response = component.getPort('Complete').getProperty('Data').data;
+  const port = this.getPort('Complete');
+  // the response can be accessed through properties of the port
+  const statusCode = port.getProperty('StatusCode').data;
+  const statusText = port.getProperty('StatusText').data;
+  const responseHeaders = port.getProperty('Headers').data;
+  const responseData = port.getProperty('Data').data;
+  // or the whole response object
+  const response = port.getProperty('Response').data;
 });
 
 component.getPort('Failed').onEmit(function() {
