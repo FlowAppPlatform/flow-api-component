@@ -4,10 +4,11 @@
   "description": "Components to make requests to an endpoint designed to work with Flow SDK",
   "main": "./index.js",
   "scripts": {
-    "test": "eslint ./src --fix && ./node_modules/mocha/bin/mocha tests.js"
+    "test": "cross-env NODE_ENV='testing' ./node_modules/mocha/bin/mocha tests.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
     "eslint": "^5.4.0",
     "flow-platform-sdk": "^1.2.0",
     "mocha": "^5.2.0"
