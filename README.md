@@ -1,10 +1,10 @@
 # Flow API component
-The npm package contains components for making API requests. The components are designed to work with Flow SDK
+The component makes API requests and is designed to work with Flow SDK
 
-*To use a component, install the package in your NodeJS project*
+*To get started, install the package in your NodeJS project*
 
 ```
-npm install flow-api-component --save
+npm i flow-api-component --save
 ```
 
 *Use the component as below*
@@ -21,11 +21,9 @@ const component = new Component.GET();
 
 ```javascript
 component.getProperty('URL').data = 'https://www.google.com/';
-// this is optional
 component.getProperty('Headers').data = {
   'X-Requested-With': 'XMLHttpRequest'
 };
-// this is optional
 component.getProperty('Data').data = {
   'q': 'home'
 };
@@ -63,6 +61,4 @@ component.execute();
 
 #### Conclusion
 
-And that's the Flow API GET component.
-
-Also check, the [POST](./docs/components/post.md), [PUT](./docs/components/put.md), [DELETE](./docs/components/delete.md)  components.
+That's the Flow API GET component. Also check, the [POST](./docs/components/post.md), [PUT](./docs/components/put.md), [DELETE](./docs/components/delete.md)  components.
