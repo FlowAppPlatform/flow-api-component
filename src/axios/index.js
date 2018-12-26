@@ -1,4 +1,5 @@
 const axios = require('axios');
+const response = require('./mock-response');
 
 module.exports = class Axios {
   
@@ -12,6 +13,10 @@ module.exports = class Axios {
 
   /* one of 'get', 'post', 'put', 'delete' */
   request(method='get', data) {
+    /* Support tests to this point */
+    if (process.env.NODE_ENV === 'testing') return new Promise(
+      resolve => resolve(response)
+    );
     const configuration = {
       method: method
     };

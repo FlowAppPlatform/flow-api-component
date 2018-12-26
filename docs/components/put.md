@@ -1,10 +1,8 @@
 # Flow API PUT component
-The npm package contains components for making API requests. The components are designed to work with Flow SDK
-
-*To use a component, install the package in your NodeJS project*
+*To get started, install the package in your NodeJS project*
 
 ```
-npm install flow-api-component --save
+npm i flow-api-component --save
 ```
 
 *Use the component as below*
@@ -13,7 +11,7 @@ npm install flow-api-component --save
 // require the component
 const Component = require('flow-api-component');
 
-// create instance of the PUT component for example
+// create instance of the PUT component
 const component = new Component.PUT();
 ```
 
@@ -21,11 +19,10 @@ const component = new Component.PUT();
 
 ```javascript
 // absolute url to your endpoint e.g. https://localhost/clans
-component.getProperty('URL').data = 'Your Endpoint';
+component.getProperty('URL').data = 'Your endpoint';
 component.getProperty('Data').data = {
   'name': 'Marin Trump', role: 'Lost Knight'
 };
-// this is optional
 component.getProperty('Headers').data = {
   'X-Requested-With': 'XMLHttpRequest'
 };
@@ -50,14 +47,17 @@ component.getPort('Failed').onEmit(function() {
   // the actual error can be accessed through the 'Data' property of the port
   let err = component.getPort('Failed').getProperty('Data').data;
 });
+```
 
+*Execute the component*
+```javascript
+// add the component to a graph before executing it
+const Graph = require('flow-platform-sdk').Graph;
+new Graph("graph-1").addComponent(component);
 
-// mandatory to execute the component
 component.execute();
 ```
 
 #### Conclusion
 
-And that's the Flow API PUT component.
-
-Also check, the [POST](./post.md), [GET](./get.md), [DELETE](./delete.md)  components.
+That's the Flow API PUT component. Also check, the [POST](./post.md), [GET](./get.md), [DELETE](./delete.md)  components.

@@ -1,3 +1,4 @@
+var Graph = require('flow-platform-sdk').Graph;
 var Component = require('./src/get');
 
 describe(`Component Tests
@@ -26,6 +27,7 @@ describe(`Component Tests
   it('Request should complete successfully', function (done) {
     this.timeout(7000);
     component.getProperty('URL').data = 'https://www.google.com/';
+    component.getProperty('Headers').data = {'X-Requested-With': 'XMLHttpRequest'};
     component.getProperty('Data').data =
       {'q': 'home'};
 
@@ -35,6 +37,7 @@ describe(`Component Tests
     component.getPort('Failed').onEmit(function() {
       done(new Error('Request failed'));
     });
+    new Graph('graph-1').addComponent(component);
     component.execute();
   })
 })
