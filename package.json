@@ -1,6 +1,5 @@
 {
   "name": "flow-api-component",
-  "version": "1.0.0",
   "description": "Components to make requests to an endpoint designed to work with Flow SDK",
   "main": "./index.js",
   "scripts": {
