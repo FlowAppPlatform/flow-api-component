@@ -2,9 +2,9 @@ const Flow = require('flow-platform-sdk');
 const Axios = require('./axios');
 
 module.exports = class DeleteComponent extends Flow.Component {
-  constructor() {
+  constructor(id = null) {
 
-    super();
+    super(id);
     this.name = 'Delete Component';
 
     const url = new Flow.Property('URL', 'url');

@@ -2,9 +2,9 @@ const Flow = require('flow-platform-sdk');
 const Axios = require('./axios');
 
 module.exports = class GetComponent extends Flow.Component {
-  constructor() {
+  constructor(id = null) {
 
-    super();
+    super(id);
     this.name = 'Get Component';
 
     const url = new Flow.Property('URL', 'url');

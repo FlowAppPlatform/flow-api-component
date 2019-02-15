@@ -1,9 +1,10 @@
 {
   "flow-api-component-get": {
-    "componentId": "flow-api-component-get",
+    "graphComponentId": "flow-api-component-get",
     "title": "GET Request",
-    "imgSrc": "assets/icons/api.svg",
-    "type": "flow-graph-component",
+    "category": "Actions",
+    "imgSrc": "assets/images/icons/api.svg",
+    "type": "graphComponent",
     "file": "src/get.js",
     "executionPlatform": ["server", "client"],
     "metadata": {
@@ -17,7 +18,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -37,7 +38,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -54,7 +55,7 @@
     "properties": [
       {
         "categoryName": "General",
-        "categoryDescription": "Basic settings about the GET component.",
+        "categoryDescription": "Basic settings about the GET component",
         "properties": [
           {
             "id": "URL",
@@ -84,10 +85,11 @@
     "isDeletable": true
   },
   "flow-api-component-post": {
-    "componentId": "flow-api-component-post",
+    "graphComponentId": "flow-api-component-post",
     "title": "POST Request",
-    "imgSrc": "assets/icons/api.svg",
-    "type": "flow-graph-component",
+    "category": "Actions",
+    "imgSrc": "assets/images/icons/api.svg",
+    "type": "graphComponent",
     "file": "src/post.js",
     "executionPlatform": ["server", "client"],
     "metadata": {
@@ -101,7 +103,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -121,7 +123,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -138,7 +140,7 @@
     "properties": [
       {
         "categoryName": "General",
-        "categoryDescription": "Basic settings about the POST component.",
+        "categoryDescription": "Basic settings about the POST component",
         "properties": [
           {
             "id": "URL",
@@ -168,10 +170,11 @@
     "isDeletable": true
   },
   "flow-api-component-put": {
-    "componentId": "flow-api-component-put",
+    "graphComponentId": "flow-api-component-put",
     "title": "PUT Request",
-    "imgSrc": "assets/icons/api.svg",
-    "type": "flow-graph-component",
+    "category": "Actions",
+    "imgSrc": "assets/images/icons/api.svg",
+    "type": "graphComponent",
     "file": "src/put.js",
     "executionPlatform": ["server", "client"],
     "metadata": {
@@ -185,7 +188,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -205,7 +208,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -222,7 +225,7 @@
     "properties": [
       {
         "categoryName": "General",
-        "categoryDescription": "Basic settings about the PUT component.",
+        "categoryDescription": "Basic settings about the PUT component",
         "properties": [
           {
             "id": "URL",
@@ -252,10 +255,11 @@
     "isDeletable": true
   },
   "flow-api-component-delete": {
-    "componentId": "flow-api-component-delete",
+    "graphComponentId": "flow-api-component-delete",
     "title": "DELETE Request",
-    "imgSrc": "assets/icons/api.svg",
-    "type": "flow-graph-component",
+    "category": "Actions",
+    "imgSrc": "assets/images/icons/api.svg",
+    "type": "graphComponent",
     "file": "src/delete.js",
     "executionPlatform": ["server", "client"],
     "metadata": {
@@ -269,7 +273,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -289,7 +293,7 @@
         "properties": [
           {
             "categoryName": "General",
-            "categoryDescription": "Basic settings about this port.",
+            "categoryDescription": "Basic settings about this port",
             "properties": [
               {
                 "id": "Data",
@@ -306,7 +310,7 @@
     "properties": [
       {
         "categoryName": "General",
-        "categoryDescription": "Basic settings about the DELETE component.",
+        "categoryDescription": "Basic settings about the DELETE component",
         "properties": [
           {
             "id": "URL",
