@@ -15,6 +15,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
+        "color": "green",
         "properties": [
           {
             "categoryName": "General",
@@ -35,6 +36,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
+        "color": "red",
         "properties": [
           {
             "categoryName": "General",
@@ -100,6 +102,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
+        "color": "green",
         "properties": [
           {
             "categoryName": "General",
@@ -120,6 +123,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
+        "color": "red",
         "properties": [
           {
             "categoryName": "General",
@@ -185,6 +189,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
+        "color": "green",
         "properties": [
           {
             "categoryName": "General",
@@ -205,6 +210,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
+        "color": "red",
         "properties": [
           {
             "categoryName": "General",
@@ -270,6 +276,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
+        "color": "green",
         "properties": [
           {
             "categoryName": "General",
@@ -290,6 +297,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
+        "color": "red",
         "properties": [
           {
             "categoryName": "General",
