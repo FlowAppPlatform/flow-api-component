@@ -15,7 +15,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
-        "color": "green",
+        "color": "#3BC105",
         "properties": [
           {
             "categoryName": "General",
@@ -36,7 +36,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
-        "color": "red",
+        "color": "#C83838",
         "properties": [
           {
             "categoryName": "General",
@@ -102,7 +102,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
-        "color": "green",
+        "color": "#3BC105",
         "properties": [
           {
             "categoryName": "General",
@@ -123,7 +123,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
-        "color": "red",
+        "color": "#C83838",
         "properties": [
           {
             "categoryName": "General",
@@ -189,7 +189,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
-        "color": "green",
+        "color": "#3BC105",
         "properties": [
           {
             "categoryName": "General",
@@ -210,7 +210,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
-        "color": "red",
+        "color": "#C83838",
         "properties": [
           {
             "categoryName": "General",
@@ -276,7 +276,7 @@
         "id": "Complete",
         "title": "Complete",
         "description": "Denotes the state when the request is successfully made",
-        "color": "green",
+        "color": "#3BC105",
         "properties": [
           {
             "categoryName": "General",
@@ -297,7 +297,7 @@
         "id": "Failed",
         "title": "Failed",
         "description": "Denotes the state when an error occurs",
-        "color": "red",
+        "color": "#C83838",
         "properties": [
           {
             "categoryName": "General",
